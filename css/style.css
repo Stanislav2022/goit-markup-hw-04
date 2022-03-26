@@ -139,7 +139,6 @@ img {
 /*========== hero ===========*/
 .hero {
   max-width: 1600px;
-  height: auto;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--background-hero);
@@ -328,18 +327,16 @@ img {
 
 /* ===== footer ===== */
 .footer-container {
+  align-items: baseline;
   display: flex;
 }
 .footer {
   background-color: var(--secondary-background-color);
   padding-bottom: 60px;
+  padding-top: 60px;
 }
 .foter-section {
   margin-right: 70px;
-  padding-top: 60px;
-}
-.foter-section-link {
-  padding-top: 72px;
 }
 .footer-icon-link {
   background-color: rgba(255, 255, 255, 0.1);
@@ -418,9 +415,12 @@ img {
   margin-left: 30px;
   margin-bottom: 30px;
 }
-.projects-item:hover {
-  border: 1px solid var(--border-color);
-  box-sizing: border-box;
+.projects-link {
+  display: block;
+}
+.projects-link:hover {
+  /* border: 1px solid var(--border-color);
+  box-sizing: border-box; */
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
